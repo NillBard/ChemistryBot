@@ -1,0 +1,204 @@
+:root{
+  --primary-font:'Rosario', sans-serif;
+  --primary-robo-font:'Roboto', sans-serif;
+  --primary-color:rgba(255, 250, 204, 1);
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+.menu {
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  background-color: rgba(143, 133, 255, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon{
+  margin-left: 50px;
+  display: flex;
+  align-items:center;
+}
+
+.icon img{
+  height: 50px;
+  width: 65px;
+  background-size: cover;
+}
+
+.icon p{
+  color:var(--primary-color);
+  font-size:xx-large;
+  font-family: var(--primary-robo-font);
+  font-weight: bolder;
+}
+
+.account{
+  margin-right: 110px;
+  display: flex;
+  align-items:center; 
+}
+
+.account img{
+  height: 50px;
+  width: 65px;
+  background-size: cover;
+}
+
+.account p{
+  color:var(--primary-color);
+  font-size:xx-large;
+  font-family: var(--primary-font);
+  
+}
+
+.contain{
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-color: black;
+  width: 100%;
+  background-color: rgba(52, 68, 91, 1);
+  display:flex;
+  justify-content: space-evenly;
+  min-height: 100%;
+
+}
+
+.leftBolcks{
+  flex-basis: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.link{
+  border-radius: 15px;
+  padding: 12px 0 8px 30px;
+  background-color:rgba(74, 97, 130, 0.99) ;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items:center; */
+
+}
+.premium{
+  height: 270px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color:rgba(74, 97, 130, 0.99) ;
+}
+
+
+.promo{
+  border-radius: 15px;
+  background-color:rgba(74, 97, 130, 0.99) ;
+  flex-basis: 50%;
+}
+
+.news{
+  border-radius: 15px;
+  background-color: rgba(74, 97, 130, 0.99);
+  flex-basis: 20%;
+
+}
+.imgLinks{
+
+  display: flex;
+  align-items: center;
+}
+
+#vk{
+ height: 38px;
+ width: 48px;
+ background-size: cover;
+ 
+
+}
+
+#open-book{
+  height: 36px;
+ width: 44px;
+ background-size: cover;
+}
+
+#star{
+  height: 36px;
+ width: 44px;
+ background-size: cover;
+}
+
+#contract{
+  height: 36px;
+ width: 44px;
+ background-size: cover;
+}
+
+#Check{
+  height: 36px;
+ width: 44px;
+ background-size: cover;
+}
+
+#book{
+  height: 36px;
+ width: 44px;
+ background-size: cover;
+}
+
+#help{
+  height: 36px;
+ width: 44px;
+ background-size: cover;
+}
+
+.imgLinks a{
+  margin-left: 10px;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.premium{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+.premBlocks{
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+#brilliant{
+  height: 97px;
+  width: 99px;
+  background-size: cover; 
+}
+
+.premBlocks span{
+  margin-left: 10px;
+  font-size: large;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.premium button {
+  height: 60px;
+  width: 180px;
+  border-radius:200px;
+  background-color: rgba(143, 133, 255, 1);
+  color:var(--primary-color);
+  font-size: large;
+  font-family: var(--primary-font);
+}
+
+
+
