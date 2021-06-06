@@ -9,7 +9,7 @@ import help from '../leftBar/question-mark 1.svg';
 import React from "react";
 export default function leftBar (){
     return(
-        <div className = 'leftBlщcks'>
+        
             <div className = 'link'>
                 <div className = 'imgLinks'>
                     <img id = 'vk' src = {Vk} ></img>
@@ -40,7 +40,7 @@ export default function leftBar (){
                     <a href=""> Помощь</a>
                 </div>
             </div>
-        </div>
+        
         
     );
 };

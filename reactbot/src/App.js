@@ -1,11 +1,12 @@
 
-// import './App.css';
-import LeftBar from './components/leftBar/leftBar.js';
+import Menu from './components/menu/menu';
+import Contain from './components/contain';
 
 function App() {
   return (
     <div>
-      <LeftBar />
+      <Menu></Menu>
+      <Contain></Contain>
     </div>
 );
 }
