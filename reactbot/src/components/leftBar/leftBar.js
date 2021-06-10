@@ -7,39 +7,41 @@ import Check from '../leftBar/check 1.svg';
 import books from '../leftBar/book 1.svg';
 import help from '../leftBar/question-mark 1.svg';
 import React from "react";
+import { NavLink } from "react-router-dom";
+
+
 export default function leftBar (){
-    return(
-        
-            <div className = 'link'>
+    return(        
+            <nav className = 'link'>
                 <div className = 'imgLinks'>
                     <img id = 'vk' src = {Vk} ></img>
-                    <a href="">Группа в ВК</a>
+                    <a href =''>Группа в ВК</a>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'open-book' src = {openBook} ></img>
-                    <a href=""> Конспекты</a>
+                    <NavLink to="/Outlines"> Конспекты</NavLink>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'star' src = {star} ></img>
-                    <a href=""> Рейтинг</a>
+                    <NavLink to="/rate"> Рейтинг</NavLink>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'contract' src = {contract} ></img>
-                    <a href=""> Пробники </a>
+                    <NavLink to=""> Пробники </NavLink>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'Check' src = {Check} ></img>
-                    <a href=""> Статьи</a>
+                    <NavLink to=""> Статьи</NavLink>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'book' src = {books} ></img>
-                    <a href=""> Тесты</a>
+                    <NavLink to="/testing"> Тесты</NavLink>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'help' src = {help} ></img>
-                    <a href=""> Помощь</a>
+                    <NavLink to=""> Помощь</NavLink>
                 </div>
-            </div>
+            </nav>
         
         
     );

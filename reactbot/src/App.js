@@ -2,7 +2,7 @@
 import Menu from './components/menu/menu';
 import Contain from './components/contain';
 
-function App() {
+const App = (props) => {
   return (
     <div>
       <Menu></Menu>
