@@ -1,0 +1,35 @@
+:root{
+    --primary-font:'Rosario', sans-serif;
+    --primary-robo-font:'Roboto', sans-serif;
+    --primary-color:rgba(255, 250, 204, 1);
+}
+
+.h1 {
+    font-size: 30px;
+    margin-left: 30px;
+    color: var(--primary-color);
+    font-family: var(--primary-robo-font);
+}
+.promo{
+    overflow: scroll;
+    height: 40em;
+    margin-bottom: 100px;
+}
+
+
+/* RATING */
+.champions {
+    text-align: center 
+}
+.champions .second {
+    display:flex;
+    justify-content: space-around;
+}
+
+.h2 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-family: var(--primary-robo-font); 
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
