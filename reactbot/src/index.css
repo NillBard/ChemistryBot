@@ -32,6 +32,6 @@ code {
   background-color: rgba(52, 68, 91, 1);
   display:flex;
   justify-content: space-evenly;
-  min-height: 100%;
+  min-height: 100vh;
 
 }

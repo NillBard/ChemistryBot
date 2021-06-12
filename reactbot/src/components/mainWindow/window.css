@@ -4,16 +4,31 @@
     --primary-color:rgba(255, 250, 204, 1);
 }
 
+.headRate{
+    background-color: rgba(74, 97, 130, 0.99);
+    position: sticky;
+    top:0;
+}
+
 .h1 {
     font-size: 30px;
     margin-left: 30px;
     color: var(--primary-color);
     font-family: var(--primary-robo-font);
+    position: sticky;
+    top:0;
+
+    
 }
 .promo{
-    overflow: scroll;
+    flex-basis: 50%;
     height: 40em;
     margin-bottom: 100px;
+    overflow: scroll;
+}
+
+.promo::-webkit-scrollbar{
+    width: 0;
 }
 
 

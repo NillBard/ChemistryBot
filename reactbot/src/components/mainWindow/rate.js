@@ -7,8 +7,10 @@ import PersonRate from '../mainWindow/PersonRate'
 
 export default function Rate(){
     return(
-        <div className = 'leftBlocks'>
-            <h1 className='h1'>Рейтинг</h1>
+        <div >
+            <div className ='headRate'>
+                <h1 className='h1'>Рейтинг</h1>
+            </div>
             <div className='champions'>
                 <div className='champions first'><Champion /></div>
                 <div className='champions second'><Champion/><Champion/></div>
@@ -20,6 +22,19 @@ export default function Rate(){
                         <PersonRate/>
                         <PersonRate/>
                         <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        <PersonRate/>
+                        
                     </ul>
                 </div>
             </div>

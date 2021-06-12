@@ -5,8 +5,8 @@ import Contain from './components/contain';
 const App = (props) => {
   return (
     <div>
-      <Menu></Menu>
-      <Contain></Contain>
+      <Menu/>
+      <Contain/>
     </div>
 );
 }

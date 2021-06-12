@@ -18,6 +18,7 @@ function MainWindow(){
                 <Route path ='/Outlines' component = {Outlines}></Route>
                 <Route path ='/testing' component = {Tests}></Route>                
             </Switch>
+
         </main>
     )
 }
