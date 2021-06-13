@@ -15,7 +15,7 @@ export default function leftBar (){
             <nav className = 'link'>
                 <div className = 'imgLinks'>
                     <img id = 'vk' src = {Vk} ></img>
-                    <a href =''>Группа в ВК</a>
+                    <a href ='http://vk.com' target="_blank">Группа в ВК</a>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'open-book' src = {openBook} ></img>

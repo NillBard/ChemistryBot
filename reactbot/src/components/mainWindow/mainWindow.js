@@ -10,7 +10,7 @@ import Tests from './testing';
 
 function MainWindow(){
     return(
-        <main className = 'promo'>
+        <main id='promo' className = 'promo'>
             <Switch>
                 <Route exact path ='/news' component = {News}></Route>
                 <Route path ='/registPage' component = {RegistrPage}></Route>

@@ -1,6 +1,7 @@
 :root{
     --primary-font:'Rosario', sans-serif;
-    --primary-robo-font:'Roboto', sans-serif;
+    /* --primary-robo-font:'Roboto', sans-serif; */
+    --primary-robo-font: 'Yandex Sans Text', Helvetica, Arial, sans-serif;
     --primary-color:rgba(255, 250, 204, 1);
 }
 
@@ -24,13 +25,19 @@
     flex-basis: 50%;
     height: 40em;
     margin-bottom: 100px;
-    overflow: scroll;
+    overflow-y: scroll;
+    border-radius: 15px,15px,100px,0px;
 }
 
-.promo::-webkit-scrollbar{
-    width: 0;
+#promo::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgba(74, 97, 130, 0.99);
 }
 
+#promo::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
 
 /* RATING */
 .champions {
