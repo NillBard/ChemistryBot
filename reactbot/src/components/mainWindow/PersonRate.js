@@ -4,18 +4,17 @@ import '../mainWindow/window.css';
 
 const styles = {
     text:{
-        display: 'flex',
+        display: 'flex', 
     }
 }
 
-export default function PersonRate(){
+ const PersonRate = (props) =>{
     return(
-        <li style={styles.text} >
-            <span >Place</span>
-            <div>
-                <img src={Account}/>
-            </div>
-            <span  >name</span>
-        </li>
+        <div style={styles.text} >
+                <img src= {props.avatar}/>
+            <span>{props.name}</span>
+        </div>
     )
 }
+
+export default PersonRate;

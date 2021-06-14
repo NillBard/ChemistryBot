@@ -11,6 +11,13 @@
     top:0;
 }
 
+/* .RateBlock{
+    flex-basis: 100%;
+
+    overflow-y: scroll;
+    border-radius: 15px,15px,100px,0px;
+} */
+
 .h1 {
     font-size: 30px;
     margin-left: 30px;
@@ -22,19 +29,20 @@
     
 }
 .promo{
+    /* display: flex; */
     flex-basis: 50%;
     height: 40em;
     margin-bottom: 100px;
     overflow-y: scroll;
-    border-radius: 15px,15px,100px,0px;
+    border-radius: 15px 0 0 15px ;
 }
 
-#promo::-webkit-scrollbar{
+.promo::-webkit-scrollbar{
     width: 7px;
     background-color: rgba(74, 97, 130, 0.99);
 }
 
-#promo::-webkit-scrollbar-thumb {
+.promo::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
     border-radius: 3px;
 }
