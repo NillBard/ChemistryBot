@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "jwtSecret": "sserjew",
+    "mongoUri": "mongodb+srv://Egor:1234qwer@cluster0.fc6qq.mongodb.net/index?retryWrites=true&w=majority"
+}
