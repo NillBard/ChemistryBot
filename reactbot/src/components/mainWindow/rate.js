@@ -1,13 +1,21 @@
 
 import React from 'react';
 import '../mainWindow/window.css';
-import Champion from '../mainWindow/Champion.js'
+import Champion from '../mainWindow/Champion'
 import PersonRate from '../mainWindow/PersonRate'
+import Ac from '../mainWindow/heisenberg.svg';
 
 
-export default function Rate(){
+
+
+ function Rate(){
+    const Account = {
+        name: 'Андрей',
+        avatar: Ac 
+    }
     return(
-        <div >
+        
+        <div className = 'RateBlock' >
             <div className ='headRate'>
                 <h1 className='h1'>Рейтинг</h1>
             </div>
@@ -16,24 +24,8 @@ export default function Rate(){
                 <div className='champions second'><Champion/><Champion/></div>
                 <div>
                     <ul>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
-                        <PersonRate/>
+                        <PersonRate name = {Account.name} avatar = {Account.avatar}></PersonRate>
+  
                         
                     </ul>
                 </div>
@@ -41,3 +33,5 @@ export default function Rate(){
         </div>
     )
 }
+
+export default Rate;
