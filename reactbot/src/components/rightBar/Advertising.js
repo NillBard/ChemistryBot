@@ -3,8 +3,13 @@ import '../rightBar/rightBar.css';
 
 function Advertising(){
     return(
-        <div className = 'news'>
-            <h1> Реклама </h1>
+        <div className ='rightBar'>
+            <div className = 'Advertising'>
+                <h1> Реклама </h1>
+            </div>
+            <div className = 'news'>
+                <h1> Новости </h1>
+            </div>
         </div>
     )
 }

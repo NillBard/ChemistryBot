@@ -4,14 +4,35 @@
     --primary-color:rgba(255, 250, 204, 1);
 }
 
-.news{
+.rightBar{
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Advertising{
     border-radius: 15px;
     background-color: rgba(74, 97, 130, 0.99);
-    flex-basis: 20%;
-    height: 620px; 
+    height: 400px; 
     display:flex;
-    padding-top: 20px;
-    margin-bottom: 100px;
+    flex-direction: column;
+    
+}
+
+.Advertising h1{
+    margin: 0 auto;
+    font-size: xx-large;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+
+.news{
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: rgba(74, 97, 130, 0.99);
+    height: 400px; 
+    display:flex;
+    flex-direction: column;
     
 }
 
