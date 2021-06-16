@@ -19,7 +19,7 @@ export default function leftBar (){
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'open-book' src = {openBook} ></img>
-                    <NavLink to="/Outlines"> Конспекты</NavLink>
+                    <NavLink to="/outlines"> Конспекты</NavLink>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'star' src = {star} ></img>
@@ -27,11 +27,11 @@ export default function leftBar (){
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'contract' src = {contract} ></img>
-                    <NavLink to=""> Пробники </NavLink>
+                    <NavLink to="/exam"> Пробники </NavLink>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'Check' src = {Check} ></img>
-                    <NavLink to=""> Статьи</NavLink>
+                    <NavLink to="articles"> Статьи</NavLink>
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'book' src = {books} ></img>
@@ -39,7 +39,7 @@ export default function leftBar (){
                 </div>
                 <div className = 'imgLinks'>
                     <img id = 'help' src = {help} ></img>
-                    <NavLink to=""> Помощь</NavLink>
+                    <NavLink to="/help"> Помощь</NavLink>
                 </div>
             </nav>
         
