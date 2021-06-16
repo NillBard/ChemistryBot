@@ -63,3 +63,18 @@
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+/* Buttons registr */
+.login {
+    width: '320px';
+    height: '52px';
+    margin-bottom: '20px';
+    background-color: '#B4ADFF';
+    border-radius: '25px';
+    display: 'flex';
+    justify-content: 'center';
+    align-items: 'center';
+    font-family: 'var(--primary-robo-font)';
+    font-size: '20px';
+    color: '#FFFACC'
+}
