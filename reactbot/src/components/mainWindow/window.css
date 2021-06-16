@@ -65,11 +65,10 @@
 }
 
 /* Buttons registr */
-.login {
+.button {
     width: '320px';
     height: '52px';
     margin-bottom: '20px';
-    background-color: '#B4ADFF';
     border-radius: '25px';
     display: 'flex';
     justify-content: 'center';
@@ -77,4 +76,7 @@
     font-family: 'var(--primary-robo-font)';
     font-size: '20px';
     color: '#FFFACC'
+}
+.login {
+    background-color: '#B4ADFF';
 }

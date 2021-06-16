@@ -10,7 +10,7 @@ import Tests from './testing';
 import { useRoutes } from '../routes';
 
 function MainWindow(){
-    const routes = useRoutes(0)
+    const routes = useRoutes(0git)
     return(
         <main id='promo' className = 'promo'>
             
