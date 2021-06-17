@@ -26,7 +26,7 @@ export default function Outlines(){
         
             </div>
             <div>
-                <div className='login'><span>Регистрация</span></div>
+                <div className='login button'><span>Регистрация</span></div>
                 <div style={styles.login} ><span>Войти</span></div>
             </div>
         </div>
