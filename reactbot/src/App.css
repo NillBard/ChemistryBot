@@ -1,0 +1,54 @@
+:root{
+  --primary-font:'Rosario', sans-serif;
+  --primary-robo-font:'Roboto', sans-serif;
+  --primary-color:rgba(255, 250, 204, 1);
+}
+
+.menu {
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  background-color: rgba(143, 133, 255, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon{
+  margin-left: 50px;
+  display: flex;
+  align-items:center;
+}
+
+.icon img{
+  height: 50px;
+  width: 65px;
+  background-size: cover;
+}
+
+.icon p{
+  color:var(--primary-color);
+  font-size:xx-large;
+  font-family: var(--primary-robo-font);
+  font-weight: bolder;
+}
+
+.account{
+  margin-right: 110px;
+  display: flex;
+  align-items:center; 
+}
+
+.account img{
+  height: 50px;
+  width: 65px;
+  background-size: cover;
+}
+
+.account p{
+  color:var(--primary-color);
+  font-size:xx-large;
+  font-family: var(--primary-font);
+  
+}
+
+

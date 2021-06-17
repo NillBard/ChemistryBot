@@ -11,7 +11,7 @@ const styles = {
  const PersonRate = (props) =>{
     return(
         <div style={styles.text} >
-                <img src= {props.avatar}/>
+            <img src= {props.avatar}/>
             <span>{props.name}</span>
         </div>
     )

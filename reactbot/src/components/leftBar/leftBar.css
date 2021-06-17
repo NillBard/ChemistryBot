@@ -29,18 +29,7 @@
 }
 
 
-.promo{
-    border-radius: 15px;
-    background-color:rgba(74, 97, 130, 0.99) ;
-    flex-basis: 50%;
-}
 
-.news{
-    border-radius: 15px;
-    background-color: rgba(74, 97, 130, 0.99);
-    flex-basis: 20%;
-
-}
 .imgLinks{
 
     display: flex;

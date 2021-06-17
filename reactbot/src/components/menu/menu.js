@@ -1,7 +1,7 @@
 import React from 'react';
 import Flask from '../menu/flask 1.svg';
 import Account from '../menu/acc.svg';
-import '../menu/menu.css'
+import '../menu/menu.css';
 
 export default function Menu (){
     return (

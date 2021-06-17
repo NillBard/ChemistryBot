@@ -13,10 +13,7 @@ function MainWindow(){
     const routes = useRoutes(0)
     return(
         <main id='promo' className = 'promo'>
-            
                 {routes}
-            
-            
             {/* <Switch>
                 <Route exact path ='/news' component = {News}></Route>
                 <Route path ='/registPage' component = {RegistrPage}></Route>
@@ -24,7 +21,6 @@ function MainWindow(){
                 <Route path ='/Outlines' component = {Outlines}></Route>
                 <Route path ='/testing' component = {Tests}></Route>                
             </Switch> */}
-
         </main>
     )
 }
