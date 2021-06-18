@@ -1,13 +1,13 @@
-import Menu from './components/menu/menu';
-import Contain from './components/contain';
+import Menu from "./components/menu/menu";
+import Contain from "./components/contain";
 
-const App = () => {
+const App = (props) => {
   return (
     <div>
-      <Menu/>
-      <Contain/>
+      <Menu />
+      <Contain contain={props.state.contain} />
     </div>
-);
-}
+  );
+};
 
 export default App;

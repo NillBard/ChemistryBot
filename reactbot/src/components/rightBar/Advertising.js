@@ -10,11 +10,7 @@ function Advertising(props) {
       </div>
       <div className="news">
         <h1> Новости </h1>
-        <NewsBlock
-          header={props.header}
-          text={props.text}
-          date={props.date}
-        ></NewsBlock>
+        <NewsBlock news={props.Advertising.news}></NewsBlock>
       </div>
     </div>
   );

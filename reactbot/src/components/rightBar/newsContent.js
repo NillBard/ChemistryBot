@@ -3,15 +3,14 @@ import "../rightBar/rightBar.css";
 import { NavLink } from "react-router-dom";
 import { useHttp } from "../../hooks/http.hook";
 
-const NewsContent = ({ header, text, date }) => {
+const NewsContent = (props) => {
   return (
     <div className="newsBlock">
       <div>
-        <span>{header}</span>
-        <span>{date}</span>
+        <span>{props.news.header}</span>
       </div>
       <div>
-        <span>{text}</span>
+        <span>{props.news.text}</span>
       </div>
     </div>
   );
