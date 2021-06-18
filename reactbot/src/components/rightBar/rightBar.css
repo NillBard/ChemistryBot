@@ -1,23 +1,22 @@
-:root{
-    --primary-font:'Rosario', sans-serif;
-    --primary-robo-font:'Roboto', sans-serif;
-    --primary-color:rgba(255, 250, 204, 1);
+:root {
+  --primary-font: "Rosario", sans-serif;
+  --primary-robo-font: "Ubuntu", sans-serif;
+  --primary-color: rgba(255, 250, 204, 1);
 }
 
-.news{
-    border-radius: 15px;
-    background-color: rgba(74, 97, 130, 0.99);
-    flex-basis: 20%;
-    height: 620px; 
-    display:flex;
-    padding-top: 20px;
-    margin-bottom: 100px;
-    
+.news {
+  border-radius: 15px;
+  background-color: rgba(74, 97, 130, 0.99);
+  flex-basis: 20%;
+  height: 620px;
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 100px;
 }
 
-.news h1{
-    margin: 0 auto;
-    font-size: xx-large;
-    font-family: var(--primary-font);
-    color: var(--primary-color);
+.news h1 {
+  margin: 0 auto;
+  font-size: xx-large;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
 }

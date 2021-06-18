@@ -1,34 +1,28 @@
-import React from 'react'
-import '../mainWindow/window.css'
+import React from "react";
+import "../mainWindow/window.css";
+import logo from "./heisenberg.svg";
 
 const styles = {
-    
-    registration:{
-        width: '320px',
-        height: '52px',
-        marginBottom: '20px',
-        backgroundColor: '#8F85FF',
-        borderRadius: '25px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontFamily: 'var(--primary-robo-font)',
-        fontSize: '20px',
-        color: '#FFFACC'
-    }
-}
+  test: {},
+};
 
-export default function Outlines(){
-    return(
-        <div className = 'leftBlocks'>
-            <h1 className='h1'>Пожалуйста авторизуйтесь</h1>
-            <div>
-        
-            </div>
-            <div>
-                <div className='login button'><span>Регистрация</span></div>
-                <div style={styles.login} ><span>Войти</span></div>
-            </div>
+export default function RegistrPage() {
+  return (
+    <div className="reg">
+      <h1 className="h1">Пожалуйста авторизуйтесь</h1>
+      <div className="regContent">
+        <div>
+          <img className="regLogo" src={logo} />
         </div>
-    )
+        <div>
+          <div className="login button">
+            <span>Регистрация</span>
+          </div>
+          <div className="button register">
+            <span>Войти</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
