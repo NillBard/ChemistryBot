@@ -7,16 +7,30 @@ import Outlines from "./Outlines";
 import Rate from "./rate";
 import RegistrPage from "./registPage";
 import Tests from "./testing";
+import AdminNews from "../admin/adminNews";
 
-function MainWindow() {
+function MainWindow(props) {
   return (
     <main id="promo" className="promo">
       <Switch>
-        <Route exact path="/news" component={News}></Route>
+        <Route
+          path="/news"
+          render={() => <News news={props.contain.advertising}></News>}
+        ></Route>
         <Route path="/registPage" component={RegistrPage}></Route>
         <Route path="/rate" component={Rate}></Route>
         <Route path="/Outlines" component={Outlines}></Route>
         <Route path="/testing" component={Tests}></Route>
+        <Route
+          path="/adminNews"
+          render={() => (
+            <AdminNews
+              news={props.contain.advertising}
+              addNews={props.addNews}
+              updateNews={props.updateNews}
+            ></AdminNews>
+          )}
+        ></Route>
       </Switch>
     </main>
   );

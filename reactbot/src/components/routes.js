@@ -4,8 +4,14 @@ import MainWindow from "./mainWindow/mainWindow";
 import RegistrPage from "./mainWindow/registPage";
 
 export const useRoutes = (isAuth, props) => {
-  if (isAuth) {
-    return <MainWindow contain={props.contain}></MainWindow>;
+  if (!isAuth) {
+    return (
+      <MainWindow
+        contain={props.contain}
+        addNews={props.addNews}
+        updateNews={props.updateNews}
+      ></MainWindow>
+    );
   }
   return (
     <Switch>

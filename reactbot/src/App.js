@@ -5,7 +5,11 @@ const App = (props) => {
   return (
     <div>
       <Menu />
-      <Contain contain={props.state.contain} />
+      <Contain
+        contain={props.state.contain}
+        addNews={props.addNews}
+        updateNews={props.updateNews}
+      />
     </div>
   );
 };

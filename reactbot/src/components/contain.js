@@ -6,12 +6,12 @@ import Advertising from "./rightBar/Advertising";
 import { useRoutes } from "./routes";
 
 export default function Contain(props) {
-  const routes = useRoutes(1, props);
+  const routes = useRoutes(0, props);
   return (
     <div className="contain">
       <Left></Left>
       {routes}
-      <Advertising Advertising={props.contain.Advertising}></Advertising>
+      <Advertising advertising={props.contain.advertising}></Advertising>
     </div>
   );
 }

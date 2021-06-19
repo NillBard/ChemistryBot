@@ -1,44 +1,58 @@
-:root{
-    --primary-font:'Rosario', sans-serif;
-    --primary-robo-font:'Roboto', sans-serif;
-    --primary-color:rgba(255, 250, 204, 1);
+:root {
+  --primary-font: "Rosario", sans-serif;
+  --primary-robo-font: "Ubuntu", sans-serif;
+  --primary-color: rgba(255, 250, 204, 1);
 }
 
-.rightBar{
-    flex-basis: 15%;
-    display: flex;
-    flex-direction: column;
+.rightBar {
+  flex-basis: 15%;
+  display: flex;
+  flex-direction: column;
 }
 
-.Advertising{
-    border-radius: 15px;
-    background-color: rgba(74, 97, 130, 0.99);
-    height: 400px; 
-    display:flex;
-    flex-direction: column;
-    
+.Advertising {
+  border-radius: 15px;
+  background-color: rgba(74, 97, 130, 0.99);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
 
-.Advertising h1{
-    margin: 0 auto;
-    font-size: xx-large;
-    font-family: var(--primary-font);
-    color: var(--primary-color);
+.Advertising h1 {
+  flex-basis: 100%;
+  margin: 0 auto;
+  font-size: xx-large;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
 }
 
-.news{
-    margin-top: 10px;
-    border-radius: 15px;
-    background-color: rgba(74, 97, 130, 0.99);
-    height: 400px; 
-    display:flex;
-    flex-direction: column;
-    
+.news {
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: rgba(74, 97, 130, 0.99);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
-.news h1{
-    margin: 0 auto;
-    font-size: xx-large;
-    font-family: var(--primary-font);
-    color: var(--primary-color);
+.news h1 {
+  margin: 0 auto;
+  font-size: xx-large;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.newsBlock {
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  flex-basis: 100%;
+  background-color: rgba(79, 104, 140, 1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
