@@ -26,11 +26,6 @@
   flex-direction: column;
 }
 
-.newsBlock .content {
-  flex-basis: 100%;
-  overflow: -moz-hidden-unscrollable;
-}
-
 .headAndDate {
   margin-bottom: 20px;
 }
@@ -52,18 +47,20 @@
 
 /*admin*/
 .addHeader {
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 15px;
-  flex-basis: 90%;
+  height: 30px;
+  width: 50%;
   background: var(--primary-color);
   font-family: var(--primary-robo-font);
   margin-bottom: 30px;
 }
 
 .addText {
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 15px;
-  flex-basis: 90%;
+  height: 80px;
+  width: 540px;
   background: var(--primary-color);
   font-family: var(--primary-robo-font);
 }

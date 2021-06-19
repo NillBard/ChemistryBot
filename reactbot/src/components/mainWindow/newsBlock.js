@@ -3,7 +3,7 @@ import "../mainWindow/window.css";
 
 const NewsBlock = (props) => {
   return (
-    <div className="newsBlock">
+    <div className="newsMainBlock">
       <div className="headAndDate">
         <span className="header">{props.news.header}</span>
       </div>
