@@ -1,6 +1,7 @@
 import React from "react";
 import "../rightBar/rightBar.css";
 import NewsBlock from "../rightBar/newsContent";
+import { NavLink } from "react-router-dom";
 
 function Advertising(props) {
   return (
@@ -10,7 +11,8 @@ function Advertising(props) {
       </div>
       <div className="news">
         <h1> Новости </h1>
-        <NewsBlock news={props.Advertising.news}></NewsBlock>
+        <NewsBlock news={props.advertising.news[0]}></NewsBlock>
+        <NavLink to="/news">Смотреть больше</NavLink>
       </div>
     </div>
   );

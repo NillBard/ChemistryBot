@@ -1,7 +1,8 @@
 :root {
   --primary-font: "Rosario", sans-serif;
   /* --primary-robo-font:'Roboto', sans-serif; */
-  --primary-robo-font: "Yandex Sans Text", Helvetica, Arial, sans-serif;
+  /* --primary-robo-font: "Yandex Sans Text", Helvetica, Arial, sans-serif; */
+  --primary-robo-font: "Ubuntu", sans-serif;
   --primary-color: rgba(255, 250, 204, 1);
 }
 
@@ -13,7 +14,7 @@
 
 .h1 {
   font-size: 30px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   color: var(--primary-color);
   font-family: var(--primary-robo-font);
   position: sticky;
@@ -39,6 +40,47 @@
   border-radius: 3px;
 }
 
+/* NEWS*/
+
+.headNews h1 {
+  font-size: 30px;
+  margin-left: 30px;
+  color: var(--primary-color);
+  font-family: var(--primary-robo-font);
+  position: sticky;
+  top: 0;
+}
+
+.newsBlock {
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  background-color: rgba(79, 104, 140, 1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headAndDate {
+  margin-bottom: 20px;
+}
+
+.header {
+  font-size: 25px;
+  margin-left: 30px;
+  color: var(--primary-color);
+  font-family: var(--primary-robo-font);
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 20px;
+  /* margin-left: 30px; */
+  color: var(--primary-color);
+  font-family: var(--primary-robo-font);
+}
+
 /* RATING */
 .champions {
   text-align: center;
@@ -58,17 +100,47 @@
 
 /* Buttons registr */
 .button {
-  width: "320px";
-  height: "52px";
-  margin-bottom: "20px";
-  border-radius: "25px";
-  display: "flex";
-  justify-content: "center";
-  align-items: "center";
-  font-family: "var(--primary-robo-font)";
-  font-size: "20px";
-  color: "#FFFACC";
+  width: 320px;
+  height: 52px;
+  margin-top: 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-robo-font);
+  font-size: 20px;
+  color: #fffacc;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.login:hover,
+.register:hover {
+  transition: 0.2s;
+  box-shadow: 1px 1px 5px black;
 }
 .login {
-  background-color: "#B4ADFF";
+  background-color: #8f85ff;
+}
+.register {
+  background-color: #b4adff;
+}
+.regLogo {
+  width: 200px;
+  height: 200px;
+}
+.regContent {
+  width: 90%;
+  /* height: 90%; */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #4f688c;
+  border-radius: 15px;
+}
+.reg {
+  text-align: center;
 }
