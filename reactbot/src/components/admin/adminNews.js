@@ -20,11 +20,11 @@ const AdminNews = (props) => {
   };
 
   return (
-    <div className="NewsBlock">
+    <div className="adminNews">
       <div className="headNews">
         <h1>Новости</h1>
       </div>
-      <div className="newsBlock">
+      <div className="addNewsBlock">
         <div>
           <input
             className="addHeader"
@@ -34,16 +34,19 @@ const AdminNews = (props) => {
             value={props.news.newsChangeHead}
           ></input>
         </div>
-        <div>
-          <textarea
-            className="addText"
-            onChange={postChange}
-            ref={text}
-            value={props.news.newsChangeText}
-          ></textarea>
+
+        <textarea
+          className="addText"
+          onChange={postChange}
+          ref={text}
+          value={props.news.newsChangeText}
+        ></textarea>
+        <div className="button">
+          <button>delete</button>
+          <button onClick={addNews}>add</button>
         </div>
       </div>
-      <button onClick={addNews}>add</button>
+
       {newsWindow}
     </div>
   );
