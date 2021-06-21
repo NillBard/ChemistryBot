@@ -162,3 +162,12 @@ li {
   text-decoration: underline;
   margin-bottom: 5px;
 }
+
+/* test */
+.testLinks {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: var(--primary-robo-font);
+}

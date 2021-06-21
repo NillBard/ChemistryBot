@@ -6,8 +6,9 @@ import NewsContain from "./NewsContain";
 import Outlines from "./Outlines";
 import Rate from "./rate";
 import RegistrPage from "./registPage";
-import Tests from "./testing";
+import Tests from "./testing.js";
 import AdminNewsContainer from "../admin/adminContaier";
+import TestTheme from "./testTheme";
 
 function MainWindow(props) {
   return (
@@ -22,6 +23,7 @@ function MainWindow(props) {
           path="/adminNewsContaner"
           render={() => <AdminNewsContainer></AdminNewsContainer>}
         ></Route>
+        <Route path="/test/:id" exact component={TestTheme}></Route>
       </Switch>
     </main>
   );
