@@ -51,10 +51,10 @@ const newsReducer = (state = initialState, action) => {
     }
 
     case UPDATE_NEWS: {
-      let stateCopy = { state };
+      let stateCopy = { ...state };
       stateCopy.advertising = { ...state.advertising };
       stateCopy.advertising.newsChangeHead = action.newsHeader;
-      stateCopy.advertising.newsChangeText = action.newTextNews;
+      stateCopy.advertising.newsChangeText = action.newsText;
       return stateCopy;
     }
 
