@@ -3,7 +3,7 @@ import "../admin/admin.css";
 import NewsBlock from "../mainWindow/newsBlock";
 
 const AdminNews = (props) => {
-  let newsWindow = props.news.news.map((el) => (
+  let newsWindow = props.advertising.news.map((el) => (
     <NewsBlock news={el}></NewsBlock>
   ));
   let header = React.createRef();
@@ -18,7 +18,7 @@ const AdminNews = (props) => {
     let newsText = text.current.value;
     props.updateNews(newsHeader, newsText);
   };
-
+  debugger;
   return (
     <div className="adminNews">
       <div className="headNews">
@@ -31,7 +31,7 @@ const AdminNews = (props) => {
             type="text"
             onChange={postChange}
             ref={header}
-            value={props.news.newsChangeHead}
+            value={props.advertising.newsChangeHead}
           ></input>
         </div>
 
@@ -39,7 +39,7 @@ const AdminNews = (props) => {
           className="addText"
           onChange={postChange}
           ref={text}
-          value={props.news.newsChangeText}
+          value={props.advertising.newsChangeText}
         ></textarea>
         <div className="button">
           <button>delete</button>

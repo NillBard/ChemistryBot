@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 
 let mapStateToProps = (state) => {
   return {
-    news: state.contain.advertising,
+    advertising: state.contain.advertising,
   };
 };
 let mapDispatchToProps = (dispatch) => {
@@ -14,7 +14,8 @@ let mapDispatchToProps = (dispatch) => {
       dispatch(addNewsCreator());
     },
     updateNews: (newsHeader, newsText) => {
-      dispatch(updateNewsCreator(newsHeader, newsText));
+      let action = updateNewsCreator(newsHeader, newsText);
+      dispatch(action);
     },
   };
 };

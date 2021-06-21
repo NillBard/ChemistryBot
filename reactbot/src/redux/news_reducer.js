@@ -35,24 +35,29 @@ let initialState = {
 
 const newsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_NEWS:
-      {
-        let newNews = {
-          id: 4,
-          header: state.advertising.newsChangeHead,
-          text: state.advertising.newsChangeText,
-        };
-        state.advertising.news.unshift(newNews);
-        state.advertising.newsChangeHead = "";
-        state.advertising.newsChangeText = "";
-      }
-      return state;
-    case UPDATE_NEWS:
-      {
-        state.advertising.newsChangeHead = action.newsHeader;
-        state.advertising.newsChangeText = action.newsText;
-      }
-      return state;
+    case ADD_NEWS: {
+      let newNews = {
+        id: 4,
+        header: state.advertising.newsChangeHead,
+        text: state.advertising.newsChangeText,
+      };
+      let stateCopy = { ...state };
+      stateCopy.advertising = { ...state.advertising };
+      stateCopy.advertising.news = [...state.advertising.news];
+      stateCopy.advertising.news.unshift(newNews);
+      stateCopy.advertising.newsChangeHead = "";
+      stateCopy.advertising.newsChangeText = "";
+      return stateCopy;
+    }
+
+    case UPDATE_NEWS: {
+      let stateCopy = { state };
+      stateCopy.advertising = { ...state.advertising };
+      stateCopy.advertising.newsChangeHead = action.newsHeader;
+      stateCopy.advertising.newsChangeText = action.newTextNews;
+      return stateCopy;
+    }
+
     default:
       return state;
   }
