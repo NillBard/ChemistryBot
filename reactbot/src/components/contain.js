@@ -1,17 +1,16 @@
 import "../index.css";
 import React from "react";
 import Left from "./leftBar/Left";
-
-import Advertising from "./rightBar/Advertising";
+import AdvertisingContain from "./rightBar/AdvertisingContain";
 import { useRoutes } from "./routes";
 
-export default function Contain(props) {
-  const routes = useRoutes(0, props);
+export default function Contain() {
+  const routes = useRoutes(0);
   return (
     <div className="contain">
       <Left></Left>
       {routes}
-      <Advertising advertising={props.contain.advertising}></Advertising>
+      <AdvertisingContain></AdvertisingContain>
     </div>
   );
 }

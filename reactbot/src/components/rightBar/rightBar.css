@@ -13,14 +13,13 @@
 .Advertising {
   border-radius: 15px;
   background-color: rgba(74, 97, 130, 0.99);
-  height: 400px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   width: 200px;
 }
 
 .Advertising h1 {
-  flex-basis: 100%;
   margin: 0 auto;
   font-size: xx-large;
   font-family: var(--primary-font);
@@ -32,7 +31,7 @@
   margin-top: 10px;
   border-radius: 15px;
   background-color: rgba(74, 97, 130, 0.99);
-  height: 400px;
+  height: 250px;
   display: flex;
   flex-direction: column;
 }
@@ -49,7 +48,8 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 40px;
-
+  width: 115px;
+  height: 140px;
   background-color: rgba(79, 104, 140, 1);
   border-radius: 15px;
   display: flex;

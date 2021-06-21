@@ -51,7 +51,7 @@
   top: 0;
 }
 
-.newsBlock {
+.newsMainBlock {
   padding: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -143,4 +143,22 @@
 }
 .reg {
   text-align: center;
+}
+
+/* OUTLINES */
+
+.outlines {
+  height: 100%;
+}
+.outlinesHeader {
+  background-color: #4f688c;
+}
+.ul {
+  font-size: 1.5rem;
+  list-style-type: decimal;
+  color: var(--primary-color);
+}
+li {
+  text-decoration: underline;
+  margin-bottom: 5px;
 }
