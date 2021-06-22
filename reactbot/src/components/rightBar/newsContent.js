@@ -6,11 +6,11 @@ import "../rightBar/rightBar.css";
 const NewsContent = (props) => {
   return (
     <div className="newsBlock">
-      <div>
+      <div className="newsHeader">
         <span>{props.news.header}</span>
       </div>
 
-      <p>{props.news.text}</p>
+      <p className="newsBody">{props.news.text}</p>
     </div>
   );
 };

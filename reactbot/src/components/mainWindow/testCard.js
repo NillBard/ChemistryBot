@@ -1,5 +1,7 @@
 import React from "react";
 import question from "../../tests/test/task1_11.png";
+import question1 from "../../tests/test/task1_12.png";
+import ReactDOM from "react-dom";
 
 const styles = {
   but: {
@@ -16,6 +18,23 @@ const styles = {
 
 export default function TestCard(props) {
   const id = props.links;
+  function click() {
+    ReactDOM.render(
+      <div>
+        <img src={question1} />
+        <div style={styles.row}>
+          <span className="h1">Введите ответ:</span>
+        </div>
+        <div style={styles.row}>
+          <input />
+          <div className="button login" style={styles.but} onClick={click}>
+            OK
+          </div>
+        </div>
+      </div>,
+      document.getElementById("promo")
+    );
+  }
   return (
     <div>
       <img src={question} />
@@ -24,7 +43,7 @@ export default function TestCard(props) {
       </div>
       <div style={styles.row}>
         <input />
-        <div className="button login" style={styles.but}>
+        <div className="button login" style={styles.but} onClick={click}>
           OK
         </div>
       </div>
