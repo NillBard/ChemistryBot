@@ -4,7 +4,7 @@ import MainWindow from "./mainWindow/mainWindow";
 import RegistrPage from "./mainWindow/registPage";
 
 export const useRoutes = (isAuth) => {
-  if (!isAuth) {
+  if (isAuth) {
     return <MainWindow></MainWindow>;
   }
   return (

@@ -1,20 +1,45 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../mainWindow/window.css";
 import logo from "./heisenberg.svg";
-import ReactDOM from "react-dom";
-import Reg from "./reg";
-
-const styles = {
-  test: {},
-};
+import { useHttp } from "../../hooks/http.hook";
+import { AuthContext } from "../../redux/authContext";
 
 export default function RegistrPage() {
-  function reg() {
-    ReactDOM.render(<Reg />, document.getElementById("promo"));
-  }
-  function log() {
-    ReactDOM.render(<Reg />, document.getElementById("promo"));
-  }
+  const auth = useContext(AuthContext);
+  const { loading, request } = useHttp();
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  });
+
+  const changeHandler = (event) => {
+    setForm({ ...form, [event.target.name]: event.target.value });
+  };
+  const registrHandler = async () => {
+    try {
+      const data = await request(
+        "http://localhost:5000/api/auth/register",
+        "POST",
+        {
+          ...form,
+        }
+      );
+      console.log(data);
+    } catch (e) {}
+  };
+
+  const loginHandler = async () => {
+    try {
+      const data = await request(
+        "http://localhost:5000/api/auth/login",
+        "POST",
+        {
+          ...form,
+        }
+      );
+      auth.login(data.token, data.userId);
+    } catch (e) {}
+  };
   return (
     <div className="reg">
       <h1 className="h1">Пожалуйста авторизуйтесь</h1>
@@ -22,13 +47,39 @@ export default function RegistrPage() {
         <div>
           <img className="regLogo" src={logo} />
         </div>
+        <div className="input-field">
+          <input
+            placeholder="Введите email"
+            id="email"
+            type="text"
+            name="email"
+            onChange={changeHandler}
+          />
+        </div>
+        <div className="input-field">
+          <input
+            placeholder="Введите пароль"
+            id="password"
+            type="text"
+            name="password"
+            onChange={changeHandler}
+          />
+        </div>
         <div>
-          <div className="login button" onClick={reg}>
+          <button
+            disabled={loading}
+            onClick={registrHandler}
+            className="login button"
+          >
             <span>Регистрация</span>
-          </div>
-          <div className="button register" onClick={log}>
+          </button>
+          <button
+            onClick={loginHandler}
+            disabled={loading}
+            className="button register"
+          >
             <span>Войти</span>
-          </div>
+          </button>
         </div>
       </div>
     </div>
