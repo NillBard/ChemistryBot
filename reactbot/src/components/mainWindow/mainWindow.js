@@ -9,6 +9,8 @@ import RegistrPage from "./registPage";
 import Tests from "./testing.js";
 import AdminNewsContainer from "../admin/adminContaier";
 import TestTheme from "./testTheme";
+import Articles from "./articles.js";
+import Exam from "./exam";
 
 function MainWindow(props) {
   return (
@@ -24,6 +26,8 @@ function MainWindow(props) {
           render={() => <AdminNewsContainer></AdminNewsContainer>}
         ></Route>
         <Route path="/test/:id" exact component={TestTheme}></Route>
+        <Route path="/articles" component={Articles}></Route>
+        <Route path="/exam" component={Exam}></Route>
       </Switch>
     </main>
   );
