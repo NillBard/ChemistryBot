@@ -1,5 +1,6 @@
 const ADD_NEWS = "ADD-NEWS";
 const UPDATE_NEWS = "UPDATE-NEWS";
+const SET_NEWS = "SET-NEWS";
 
 export const addNewsCreator = () => ({ type: ADD_NEWS });
 
@@ -8,24 +9,28 @@ export const updateNewsCreator = (newsHeader, newsText) => ({
   newsHeader: newsHeader,
   newsText: newsText,
 });
+export const setNews = (news) => ({
+  type: SET_NEWS,
+  news: news,
+});
 
 let initialState = {
   advertising: {
     news: [
       {
         id: 3,
-        header: "bad news for gay",
-        text: "your ass in shit",
+        header: "Chemistry is best",
+        text: "i love it",
       },
       {
         id: 2,
-        header: "bad news for gay",
-        text: "your ass in shit",
+        header: "Chemistry is best",
+        text: "i love it",
       },
       {
         id: 1,
-        header: "bad news for gay",
-        text: "your ass in shit",
+        header: "Chemistry is best",
+        text: "i love it",
       },
     ],
     newsChangeHead: "Введите название новости",
@@ -41,21 +46,37 @@ const newsReducer = (state = initialState, action) => {
         header: state.advertising.newsChangeHead,
         text: state.advertising.newsChangeText,
       };
-      let stateCopy = { ...state };
-      stateCopy.advertising = { ...state.advertising };
-      stateCopy.advertising.news = [...state.advertising.news];
-      stateCopy.advertising.news.unshift(newNews);
-      stateCopy.advertising.newsChangeHead = "";
-      stateCopy.advertising.newsChangeText = "";
-      return stateCopy;
+
+      return {
+        ...state,
+        advertising: {
+          ...state.advertising,
+          news: [newNews, ...state.advertising.news],
+          newsChangeHead: "",
+          newsChangeText: "",
+        },
+      };
     }
 
     case UPDATE_NEWS: {
-      let stateCopy = { ...state };
-      stateCopy.advertising = { ...state.advertising };
-      stateCopy.advertising.newsChangeHead = action.newsHeader;
-      stateCopy.advertising.newsChangeText = action.newsText;
-      return stateCopy;
+      return {
+        ...state,
+        advertising: {
+          ...state.advertising,
+          newsChangeHead: action.newsHeader,
+          newsChangeText: action.newsText,
+        },
+      };
+    }
+
+    case SET_NEWS: {
+      return {
+        ...state,
+        advertising: {
+          ...state.advertising,
+          news: [action.news, ...state.advertising.news],
+        },
+      };
     }
 
     default:

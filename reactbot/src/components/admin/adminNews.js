@@ -4,7 +4,7 @@ import NewsBlock from "../mainWindow/newsBlock";
 
 const AdminNews = (props) => {
   let newsWindow = props.advertising.news.map((el) => (
-    <NewsBlock news={el}></NewsBlock>
+    <NewsBlock key={el.id} news={el}></NewsBlock>
   ));
   let header = React.createRef();
   let text = React.createRef();
@@ -18,7 +18,7 @@ const AdminNews = (props) => {
     let newsText = text.current.value;
     props.updateNews(newsHeader, newsText);
   };
-  debugger;
+
   return (
     <div className="adminNews">
       <div className="headNews">

@@ -1,5 +1,9 @@
 import React from "react";
-import { addNewsCreator, updateNewsCreator } from "../../redux/news_reducer";
+import {
+  addNewsCreator,
+  updateNewsCreator,
+  setNews,
+} from "../../redux/news_reducer";
 import AdminNews from "./adminNews";
 import { connect } from "react-redux";
 
@@ -16,6 +20,10 @@ let mapDispatchToProps = (dispatch) => {
     updateNews: (newsHeader, newsText) => {
       let action = updateNewsCreator(newsHeader, newsText);
       dispatch(action);
+    },
+
+    setNewNews: (news) => {
+      dispatch(setNews(news));
     },
   };
 };
