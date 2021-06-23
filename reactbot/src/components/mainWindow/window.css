@@ -4,6 +4,8 @@
   /* --primary-robo-font: "Yandex Sans Text", Helvetica, Arial, sans-serif; */
   --primary-robo-font: "Ubuntu", sans-serif;
   --primary-color: rgba(255, 250, 204, 1);
+  --dark-primary: #4f688c;
+  --dark-light: #5d7ba5;
 }
 
 .headRate {
@@ -170,4 +172,63 @@ li {
   color: var(--primary-color);
   text-decoration: none;
   font-family: var(--primary-robo-font);
+}
+/* ACCOUNT INFI */
+.accInfoMain {
+  background-color: none;
+  padding: 7px;
+}
+
+.accInfoInfo {
+  margin-bottom: 7px;
+  background-color: var(--dark-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+}
+.accInfoInfo span {
+  display: block;
+  color: var(--primary-color);
+  font-size: x-large;
+  margin-top: 7px;
+  font-family: var(--primary-robo-font);
+}
+.accInfoInfo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.accInfoAvatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: var(--dark-light);
+  border: solid 1px none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accInfoStat {
+  margin-top: 7px;
+  background-color: var(--dark-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+}
+.accInfoInfo table {
+  padding: 7px;
+  border-collapse: collapse;
+  border-color: none;
+}
+.accInfoInfo tr,
+td {
+  background-color: #5d7ba5;
+  padding: 7px;
 }

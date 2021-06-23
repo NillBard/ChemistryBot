@@ -11,6 +11,7 @@ import AdminNewsContainer from "../admin/adminContaier";
 import TestTheme from "./testTheme";
 import Articles from "./articles.js";
 import Exam from "./exam";
+import AccInfo from "./AccInfo";
 
 function MainWindow(props) {
   return (
@@ -28,6 +29,7 @@ function MainWindow(props) {
         <Route path="/test/:id" exact component={TestTheme}></Route>
         <Route path="/articles" component={Articles}></Route>
         <Route path="/exam" component={Exam}></Route>
+        <Route path="/account" component={AccInfo} />
       </Switch>
     </main>
   );
