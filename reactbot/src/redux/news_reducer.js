@@ -33,8 +33,8 @@ let initialState = {
         text: "i love it",
       },
     ],
-    newsChangeHead: "Введите название новости",
-    newsChangeText: "Введите текст новости",
+    newsChangeHead: "",
+    newsChangeText: "",
   },
 };
 

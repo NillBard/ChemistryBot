@@ -98,6 +98,18 @@
   margin-top: 10px;
 }
 
+.input-field {
+  margin-bottom: 10px;
+}
+
+.input-field input {
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  border-color: #fffacc;
+  background-color: var(--primary-color);
+}
+
 /* Buttons registr */
 .button {
   width: 320px;

@@ -28,6 +28,7 @@ const AdminNews = (props) => {
         <div>
           <input
             className="addHeader"
+            placeholder="Введите название"
             type="text"
             onChange={postChange}
             ref={header}
@@ -37,6 +38,7 @@ const AdminNews = (props) => {
 
         <textarea
           className="addText"
+          placeholder="Введите текст"
           onChange={postChange}
           ref={text}
           value={props.advertising.newsChangeText}
