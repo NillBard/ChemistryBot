@@ -3,14 +3,21 @@ import "../mainWindow/window.css";
 import logo from "./heisenberg.svg";
 import { useHttp } from "../../hooks/http.hook";
 import { AuthContext } from "../../redux/authContext";
+import { useMessage } from "../../hooks/message.hook";
 
 export default function RegistrPage() {
+  const message = useMessage();
   const auth = useContext(AuthContext);
-  const { loading, request } = useHttp();
+  const { loading, request, error, clearError } = useHttp();
   const [form, setForm] = useState({
     email: "",
     password: "",
   });
+
+  useEffect(() => {
+    message(error);
+    clearError();
+  }, [error, message, clearError]);
 
   const changeHandler = (event) => {
     setForm({ ...form, [event.target.name]: event.target.value });
