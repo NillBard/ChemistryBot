@@ -67,7 +67,7 @@ export default function RegistrPage() {
           <input
             placeholder="Введите пароль"
             id="password"
-            type="text"
+            type="password"
             name="password"
             onChange={changeHandler}
           />

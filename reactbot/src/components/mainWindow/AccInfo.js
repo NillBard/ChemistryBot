@@ -3,7 +3,7 @@ import "./window.css";
 import avatar from "./heisenberg.svg";
 import { AuthContext } from "../../redux/authContext";
 import { useHistory } from "react-router-dom";
-
+import "materialize-css";
 const styles = {
   header: { marginLeft: "30px" },
   span: { display: "flex" },
@@ -51,6 +51,13 @@ export default function AccInfo() {
           <div className="accInfoStat">
             <span>{"Рейтинг: 0"}</span>
             <span>{"Премиум: отключен"}</span>
+          </div>
+          <div className="accInfoButt">
+            <span>ОГЭ</span>
+            <div className="accInfoSwitch">
+              <input type="checkbox" />
+            </div>
+            <span>ЕГЭ</span>
           </div>
         </div>
         <div className="accInfoInfo">
