@@ -74,18 +74,18 @@ export default function RegistrPage() {
         </div>
         <div>
           <button
-            disabled={loading}
-            onClick={registrHandler}
-            className="login button"
-          >
-            <span>Регистрация</span>
-          </button>
-          <button
             onClick={loginHandler}
             disabled={loading}
             className="button register"
           >
             <span>Войти</span>
+          </button>
+          <button
+            disabled={loading}
+            onClick={registrHandler}
+            className="login button"
+          >
+            <span>Регистрация</span>
           </button>
         </div>
       </div>

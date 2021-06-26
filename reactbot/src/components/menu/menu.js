@@ -7,9 +7,12 @@ import "../menu/menu.css";
 export default function Menu() {
   return (
     <div className="menu">
-      <div className="icon">
-        <img src={Flask}></img>
-        <p>ХИМБОТ</p>
+      <div className="account">
+        {/* <div className="icon"> */}
+        <NavLink to="/testing">
+          <img src={Flask}></img>
+          <span>ХИМБОТ</span>
+        </NavLink>
       </div>
       <div className="account">
         <NavLink to="/account">
