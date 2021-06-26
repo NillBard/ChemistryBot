@@ -33,7 +33,7 @@ export default function AccInfo() {
   const logOutHandler = (event) => {
     event.preventDefault();
     auth.logout();
-    history.push("/");
+    history.push("/registrPage");
   };
 
   return (
