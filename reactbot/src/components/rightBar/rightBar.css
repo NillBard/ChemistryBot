@@ -28,19 +28,22 @@
 
 .news {
   width: 200px;
-  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 15px;
   background-color: rgba(74, 97, 130, 0.99);
-  height: 250px;
+  height: 81%;
+  /* height: 250px; */
+  /* временно убрать размер до добавления рекламного блока */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .news h1 {
-  margin: 0 auto;
-  font-size: xx-large;
-  font-family: var(--primary-font);
+  /* margin: 0 auto; */
+  /* font-size: xx-large; */
+  font-family: var(--primary-robo-font);
+  font-size: 30px;
   color: var(--primary-color);
 }
 
