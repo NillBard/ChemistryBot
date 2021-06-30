@@ -3,14 +3,14 @@ import "../rightBar/rightBar.css";
 
 // import { useHttp } from "../../hooks/http.hook";
 
-const NewsContent = (props) => {
+const NewsContent = ({ news }) => {
   return (
-    <div className="newsBlock">
+    <div key={news.id} className="newsBlock">
       <div className="newsHeader">
-        <span>{props.news.header}</span>
+        <span>{news.header}</span>
       </div>
 
-      <p className="newsBody">{props.news.text}</p>
+      <p className="newsBody">{news.text}</p>
     </div>
   );
 };

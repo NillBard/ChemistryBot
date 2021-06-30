@@ -14,4 +14,22 @@ router.post("/add", async (req, res) => {
   }
 });
 
+router.get("/", async (req, res) => {
+  try {
+    const news = await NewsBlock.find({ owner: req.newsBlock });
+    res.json(news);
+  } catch (error) {
+    res.status(500).json({ message: "Something wrong" });
+  }
+});
+
+// router.get("/:id", async (req, res) => {
+//   try {
+//     const news = await NewsBlock.findById(req.params.id);
+//     res.json(news);
+//   } catch (error) {
+//     res.status(500).json({ message: "Something wrong" });
+//   }
+// });
+
 module.exports = router;

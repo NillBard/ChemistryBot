@@ -1,8 +1,10 @@
-const { model, Schema, Types } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
 const schema = new Schema({
-  from: { type: String, required: true, unique: true },
-  newsblocks: [{ type: Types.ObjectId, ref: "NewsBlock" }],
+  header: { type: String, required: true },
+  text: { type: String, required: true },
+  newsId: [{ type: Types.ObjectId, ref: "NewsBlock" }],
+  date: { type: Date, default: Date.now },
 });
 
 module.exports = model("News", schema);
